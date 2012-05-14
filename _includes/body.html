@@ -1,5 +1,5 @@
 <header>
-  <a id="logo" title="Weaponry" rel="home" href="/index.html">Weaponry</a>
+  <img id="logo" alt="Weaponry" src="http://otherworldscomics.com/images/639_Weaponry_Logo_manilla_j.jpg"/>
   {% include navigation.html %}
 </header>
 
@@ -13,11 +13,20 @@
   {% elsif page.author.website %}
     <p class="byline">By {{ page.author.name }}</p>
   {% endif %}
-  {{ content }}
+  {% if page.image %}
+  <section id="content-image">
+    <img src="../images/{{ page.image }}"/>
+  </section>
+  {% endif %}
+  <section id="content-description">
+    {{ content }}
+  </section>
 </article>
 
+<section>
+
+</section>
+
 <footer>
-  <section>
-    
-  </section>
+  
 </footer>

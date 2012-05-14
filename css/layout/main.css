@@ -1,0 +1,51 @@
+
+body {
+  background-color: #F2DD99;
+}
+
+#logo {
+  background-image: url("http://otherworldscomics.com/images/639_Weaponry_Logo_manilla_j.jpg");
+}
+
+nav {
+  width: 297px;
+  float: right;
+}
+
+nav, ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul#nav-links {
+  list-style-type: none;
+  
+}
+
+nav > ul#nav-links > li {
+  clear:none;
+  display:inline;
+}
+
+nav > ul#nav-links > li.break {
+  clear:right
+}
+
+article {
+  background-color: #A4E6DE;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  border-radius: 15px;
+  padding: 0 2em;
+  margin: 20px 20px 0 300px;
+}
+
+ul.pages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul.pages > li {
+  display: inline;
+  clear: none;
+}
