@@ -13,11 +13,38 @@
   {% elsif page.author.website %}
     <p class="byline">By {{ page.author.name }}</p>
   {% endif %}
+
   {% if page.image %}
   <section id="content-image">
     <img src="../images/{{ page.image }}"/>
+
+    <div id="prev_first">
+      <a class="end_page_link" href="{{ page.prev_url }}">
+        <img id="prev_img" src="../images/assets/skull_normal_previous.gif"/>
+      </a>
+      {% for post in site.categories.chapter1 reversed %}
+      {% if forloop.index == 1 %}
+        <a href="..{{ post.url }}">
+          <img id="first_img" src="../images/assets/bones_normal_first.gif"/>
+        </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div id="next_last">
+      <a href="{{ page.next_url }}">
+        <img id="next_img" src="../images/assets/skull_normal_next.gif"/>
+      </a>
+      {% for post in site.categories.chapter1 %}
+      {% if forloop.index == 1 %}
+        <a class="end_page_link" href="..{{ post.url }}">
+          <img id="last_img" src="../images/assets/bones_normal_last.gif"/>
+        </a>
+      {% endif %}
+      {% endfor %}
+    </div>
   </section>
   {% endif %}
+
   <section id="content-description">
     {{ content }}
   </section>

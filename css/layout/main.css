@@ -1,6 +1,9 @@
 
 body {
   background-color: #F2DD99;
+  background-image: url("../../images/assets/Weaponry_Backdrop_c.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 200px;
 }
 
 #logo {
@@ -9,10 +12,12 @@ body {
 
 nav {
   width: 297px;
-  float: right;
+  position: absolute;
   font-family: 'Metamorphous', cursive;
   font-color: black;
-  font-size: 24px;
+  font-size: 20px;
+  right: 200px;
+  top: 200px;
 }
 
 nav, ul {
@@ -35,12 +40,31 @@ nav > ul#nav-links > li.break {
 }
 
 article {
-  background-color: #A4E6DE;
-  border: 1px solid #A4E6DE;
-  box-shadow: 0 0 10px #A4E6DE;
-  border-radius: 15px;
-  padding: 0 2em;
+  padding: 0 2em 30px 2em;
   margin: 20px 200px 0 300px;
+}
+
+article > h1 {
+  background: url("../../images/assets/w_title_bg.gif") no-repeat;
+  padding: 20px;
+  height: 50px;
+}
+
+article > #content-image {
+  background: url("../../images/assets/w_page_bg.gif") no-repeat;
+  padding: 20px;
+}
+
+article > #content-image > img {
+  margin: auto;
+  display: block;
+}
+
+article > #content-description {
+  margin: 20px 0;
+  background: url("../../images/assets/w_comment_bg.gif") no-repeat;
+  padding: 20px;
+  text-align: center;
 }
 
 ul.pages {
@@ -52,3 +76,36 @@ ul.pages > li {
   display: inline;
   clear: none;
 }
+
+.end_page_link {
+  display: block;
+  clear: both;
+}
+
+#content-image {
+  position: relative;
+}
+
+#prev_first {
+  display: block;
+  position: relative;
+  float: left;
+  left: -180px;
+  top: -500px;
+  width: 144px;
+}
+
+#next_last {
+  display: block;
+  position: relative;
+  float: right;
+  right: -180px;
+  top: -500px;
+  width: 144px;
+}
+
+#last_img, #first_img {
+  margin-top: -35px;
+}
+
+
