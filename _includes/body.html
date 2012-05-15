@@ -16,27 +16,29 @@
 
   {% if page.image %}
   <section id="content-image">
-    <img src="../images/{{ page.image }}"/>
+    <a href="../images/{{ page.image }}" target="_blank">
+      <img src="../images/{{ page.image }}"/>
+    </a>
 
     <div id="prev_first">
-      <a class="end_page_link" href="{{ page.prev_url }}">
+      <a title="Previous Page" rel="prev" class="end_page_link" href="{{ page.prev_url }}">
         <img id="prev_img" src="../images/assets/skull_normal_previous.gif"/>
       </a>
       {% for post in site.categories.chapter1 reversed %}
       {% if forloop.index == 1 %}
-        <a href="..{{ post.url }}">
+        <a title="First Page" href="..{{ post.url }}">
           <img id="first_img" src="../images/assets/bones_normal_first.gif"/>
         </a>
       {% endif %}
       {% endfor %}
     </div>
     <div id="next_last">
-      <a href="{{ page.next_url }}">
+      <a title="Next Page" rel="next" href="{{ page.next_url }}">
         <img id="next_img" src="../images/assets/skull_normal_next.gif"/>
       </a>
       {% for post in site.categories.chapter1 %}
       {% if forloop.index == 1 %}
-        <a class="end_page_link" href="..{{ post.url }}">
+        <a title="Last Page" class="end_page_link" href="..{{ post.url }}">
           <img id="last_img" src="../images/assets/bones_normal_last.gif"/>
         </a>
       {% endif %}

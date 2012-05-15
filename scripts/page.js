@@ -5,7 +5,7 @@ window.onload = function() {
   var next = $("#next_img");
 
   next.hover(function(evt) {
-    next.attr("src", "../images/assets/skull_glow_next.gif");
+    next.attr("src", "../images/assets/skull_glow_next.png");
   }, function(evt) {
     next.attr("src", "../images/assets/skull_normal_next.gif");
   });
@@ -21,7 +21,7 @@ window.onload = function() {
   var last = $("#last_img");
 
   last.hover(function(evt) {
-    last.attr("src", "../images/assets/bones_glow_last.gif");
+    last.attr("src", "../images/assets/bones_glow_last.png");
   }, function(evt) {
     last.attr("src", "../images/assets/bones_normal_last.gif");
   });
@@ -29,9 +29,15 @@ window.onload = function() {
   var first = $("#first_img");
 
   first.hover(function(evt) {
-    first.attr("src", "../images/assets/bones_glow_first.gif");
+    first.attr("src", "../images/assets/bones_glow_first.png");
   }, function(evt) {
     first.attr("src", "../images/assets/bones_normal_first.gif");
+  });
+
+  $("#content-image > a").fancybox({
+    width: "100%",
+    heigth: "100%",
+    autoScale: false
   });
 
 };
