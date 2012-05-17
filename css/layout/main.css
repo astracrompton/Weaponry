@@ -1,23 +1,30 @@
 
 body {
   background-color: #F7E9B5;
-  background-image: url("../../images/assets/Weaponry_Backdrop_c.jpg");
+  background-image: url("../../images/assets/Weaponry_Backdrop_d.jpg");
   background-repeat: no-repeat;
-  background-position: 0 200px;
+  background-position: left bottom;
+  background-attachment: fixed;
+}
+
+#owc-logo {
+  padding: 30px 0 0 30px;;
 }
 
 #logo {
-  background-image: url("http://otherworldscomics.com/images/639_Weaponry_Logo_manilla_j.jpg");
+  margin-bottom: -80px;
+  position: absolute;
+  top:0;
 }
 
 nav {
-  width: 396px;
+  width: 330px;
   position: absolute;
   font-family: 'Metamorphous', cursive;
   font-color: black;
   font-size: 20px;
   right: 200px;
-  top: 230px;
+  top: 100px;
 }
 
 nav, ul {
@@ -33,7 +40,7 @@ nav > ul#nav-links {
 nav > ul#nav-links > li {
   clear:none;
   display:inline;
-  padding-right:50px;
+  padding-right:30px;
 }
 
 nav > ul#nav-links > li > a {
@@ -47,14 +54,15 @@ nav > ul#nav-links > li.break {
 
 article {
   padding: 0 2em 30px 2em;
-  margin: 20px 200px 0 300px;
+  margin: 60px 200px 0 300px;
 }
 
 article > h1 {
   background-image: url("../../images/assets/w_title_bg.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 20px;
+  font-family: 'Metamorphous', cursive;
+  padding: 20px 0 0 40px;
   height: 50px;
 }
 
@@ -75,7 +83,9 @@ article > #content-image > a > img {
 
 article > #content-description {
   margin: 20px 0;
-  background: url("../../images/assets/w_comment_bg.gif") no-repeat;
+  background-image: url("../../images/assets/w_page_bg.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding: 20px;
   text-align: center;
 }
@@ -86,8 +96,9 @@ ul.pages {
   margin: 0;
 }
 ul.pages > li {
-  display: inline;
+  display: inline-block;
   clear: none;
+  width: 200px;
 }
 
 .end_page_link {

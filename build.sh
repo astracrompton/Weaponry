@@ -7,3 +7,4 @@ mkdir _site
 mkdir _site/weaponry
 mv _temp/* _site/weaponry/
 rm -d _temp
+say "OWC Complete"

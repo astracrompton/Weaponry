@@ -1,0 +1,24 @@
+---
+layout: nil
+permalink: pages.json
+---
+
+{
+  "pages": 
+  {% for post in site.categories.chapter1 reversed %}
+  {% if post.layout == "chapter" %}
+  {
+    "url": "{{ post.url }}",
+    "image": "{{post.image}}",
+    "thumb": "{{ post.thumb }}",
+    "image_text": "{{ post.image_text }}",
+    "content": "{{post.content}}",
+    "title": "{{post.title}}",
+    "next_url": "{{post.next_url}}",
+    "prev_url": "{{post.prev_url}}"
+  }
+  {% if forloop.last %}{% else %},{% endif %}
+  {% endif %}
+  {% endfor %}
+
+}
