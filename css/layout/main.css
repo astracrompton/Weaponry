@@ -9,29 +9,32 @@ header {
 }
 
 #owc-logo {
-  padding: 30px 0 0 30px;;
+  padding: 20px 0 0 30px;
+  min-width: 50px;
+  width: 100%;
+  max-width: 100px;
 }
 
 #logo {
-  margin-bottom: -80px;
   position: absolute;
   top:0;
-  z-index: -50;
+  min-width: 100px;
+  width: 100%;
+  max-width: 500px;
 }
 
+
 nav {
-  width: 330px;
-  position: absolute;
   font-family: 'Metamorphous', cursive;
-  font-color: black;
   font-size: 20px;
-  right: 144px;
-  top: 100px;
+  position: relative;
+  bottom: -60px;
 }
 
 nav, ul {
-  padding: 0;
-  margin: 0;
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width:950px;
 }
 
 nav > ul#nav-links {
@@ -47,7 +50,11 @@ nav > ul#nav-links > li {
 
 nav > ul#nav-links > li > a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+nav > ul#nav-links > li > a:hover {
+  color: #ff0000;
 }
 
 nav > ul#nav-links > li.break {
@@ -66,7 +73,7 @@ article {
 }
 
 article > h1 {
-  background-image: url("../../images/assets/w_title_bg.gif");
+  background-image: url("../../images/assets/w_title_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: 'Metamorphous', cursive;
@@ -80,7 +87,7 @@ article > h1 {
 }
 
 article > #content-image {
-  background-image: url("../../images/assets/w_page_bg.gif");
+  background-image: url("../../images/assets/w_page_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 40px;
@@ -92,17 +99,18 @@ article > #content-image > a > img {
   margin: auto;
   display: block;
   width: 100%;
-  min-width: 400px;
+  min-width: 150px;
 }
 
 article > #content-description {
   margin: 40px auto;
-  background-image: url("../../images/assets/w_page_bg.gif");
+  background-image: url("../../images/assets/w_page_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 40px;
-  max-width: 1000px;
+  max-width: 650px;
   text-align: center;
+  font-family: 'Metamorphous', cursive;
 }
 
 ul.pages {
@@ -126,21 +134,13 @@ ul.pages > li {
 }
 
 #prev_first {
-  display: block;
-  position: relative;
   float: left;
   left: -180px;
-  top: -500px;
-  width: 144px;
 }
 
 #next_last {
-  display: block;
-  position: relative;
   float: right;
   right: -180px;
-  top: -500px;
-  width: 144px;
 }
 
 #last_img, #first_img {
@@ -148,3 +148,22 @@ ul.pages > li {
 }
 
 
+.page-skull {
+  position: relative;
+  width: 144px;
+  top: -500px;
+  display: block;
+}
+@media all and (max-width: 550px) {
+  #logo {
+    max-width:300px;
+  }
+  #owc-logo {
+    paddng-top:10px;
+    max-width:75px;
+  }
+
+  .page-skull {
+    display: none;
+  }
+}
