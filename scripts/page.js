@@ -2,6 +2,15 @@
 
 
 window.onload = function() {
+  var logo = $("#owc-logo");
+
+  var _logoSrc = logo.attr("src");
+  logo.hover(function(evt) {
+    logo.attr("src", "../images/assets/owc_glow.png");
+  }, function(evt) {
+    logo.attr("src", _logoSrc);
+  });
+
   var next = $("#next_img");
 
   next.hover(function(evt) {

@@ -1,10 +1,11 @@
 
 body {
-  background-color: #F7E9B5;
-  background-image: url("../../images/assets/Weaponry_Backdrop_d.jpg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-attachment: fixed;
+  background-color: black;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 1019px
 }
 
 #owc-logo {
@@ -15,6 +16,7 @@ body {
   margin-bottom: -80px;
   position: absolute;
   top:0;
+  z-index: -50;
 }
 
 nav {
@@ -53,8 +55,14 @@ nav > ul#nav-links > li.break {
 }
 
 article {
-  padding: 0 2em 30px 2em;
-  margin: 60px 144px 0 300px;
+  margin: 60px auto;
+  max-width: 1019px;
+  height: 1284px;
+  width:100%;
+  background-color: #F7E9B5;
+  background-image: url("../../images/assets/Weaponry_Backdrop_e.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 
 article > h1 {
@@ -62,8 +70,13 @@ article > h1 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: 'Metamorphous', cursive;
-  padding: 20px 0 0 40px;
+  padding: 20px 40px 0 40px;
+  max-width: 650px;
+  margin: 0 auto;
   height: 50px;
+  text-align: center;
+  position: relative;
+  top:20px;
 }
 
 article > #content-image {
@@ -71,22 +84,24 @@ article > #content-image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 40px;
+  max-width: 650px;
+  margin: 40px auto;
 }
 
 article > #content-image > a > img {
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 2000px;
   min-width: 400px;
 }
 
 article > #content-description {
-  margin: 20px 0;
+  margin: 40px auto;
   background-image: url("../../images/assets/w_page_bg.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 20px;
+  padding: 40px;
+  max-width: 1000px;
   text-align: center;
 }
 
